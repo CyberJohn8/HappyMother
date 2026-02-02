@@ -100,9 +100,9 @@ function drawHeart(x, y, size, scale) {
   ctx.shadowBlur = 12;
 
   ctx.beginPath();
-  ctx.moveTo(0, -size / 4);
-  ctx.bezierCurveTo(size / 2, -size / 2, size, size / 4, 0, size);
-  ctx.bezierCurveTo(-size, size / 4, -size / 2, -size / 2, 0, -size / 4);
+  ctx.moveTo(0, size / 4); // Ajusta la posición inicial
+  ctx.bezierCurveTo(size / 2, -size / 2, size, size / 4, 0, size); // Parte derecha
+  ctx.bezierCurveTo(-size, size / 4, -size / 2, -size / 2, 0, size / 4); // Parte izquierda
   ctx.stroke();
 
   ctx.restore();
